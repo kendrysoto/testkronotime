@@ -1,0 +1,46 @@
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<link
+  rel="stylesheet"
+  href="{{ 'slider.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+/>
+<noscript>{{ "slider.css" | asset_url | stylesheet_tag }}</noscript>
+<script src="{{ 'slider.js' | asset_url }}" defer="defer"></script>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img
+        src="https://www.allcitycanvas.com/wp-content/uploads/2019/12/los-19-mejores-sneakers-horizontal.jpg"
+        alt=""
+      />
+    </div>
+    <div class="swiper-slide">
+      <img
+        src="https://www.lavanguardia.com/files/image_449_220/uploads/2018/09/03/5fa449d66ff04.jpeg"
+        alt=""
+      />
+    </div>
+    <div class="swiper-slide">
+      <img
+        src="https://gestion.pe/resizer/q4O4ZX_X9EDsKHmTd3BH8WlYeG8=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/WPLIELVLFJCOHE33MTA6EFHG7U.jpg"
+        alt=""
+      />
+    </div>
+    ...
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev">.</div>
+  <div class="swiper-button-next">.</div>
+
+  <div class="swiper-scrollbar"></div>
+</div>
